@@ -118,6 +118,7 @@ tbody tr:hover {
 
 .labelcolor {
 	color: #73e600;
+	transition: 1s;
 }
 
 .btn-right {
@@ -165,6 +166,7 @@ thead {
 
 
 .form-group > input {
+
   border-color: transparent;
   border-bottom-color: #ccc;
   background-color: transparent!important;
@@ -173,9 +175,11 @@ thead {
 }
 
 .form-group > input:focus {
-
+	
   border-bottom-color: #73e600;
-}
+  transition: border-bottom-color 1s;
+
+} 
 
 
 
