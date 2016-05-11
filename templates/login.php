@@ -1,5 +1,8 @@
-<?php 
-
+<?php
+$error = "<p></p>"; 
+if (isset($_GET['loginfailed'])) {
+ $error = '<p class="loginfailed">Username or Password not found</p>';
+}
 // $password = password_hash("@Password!01", PASSWORD_BCRYPT);
 // var_dump($password);
 
@@ -24,30 +27,27 @@
 		<div class="panel panel-custom panel-login">
 			<div class="panel-body">
 				<form action="management/functions/checklogin.php" method="POST">
-					<div class="form-group form-custom">
-						<label for="username">Benutzer</label>
-						<input class="form-control" id="username" type="text" name="username" required></input>
+					<div>
+						<?= $error ?>
 					</div>
 					<div class="form-group form-custom">
-						<label for="password">Passwort</label>
-						<input class="form-control" id="password" type="password" name="password" required></input>
+						<label for="username">Username</label>
+						<input class="form-control" id="username" type="text" name="username" tabindex="1" required></input>
+						<hr class="login-line">
 					</div>
-					<button class="btn btn-custom btn-right" type="submit">Login</button>
+					<div class="form-group form-custom">
+						<label for="password">Password</label>
+						<input class="form-control" id="password" type="password" name="password" tabindex="2" required></input>
+						<hr class="login-line">
+					</div>
+					<button class="btn btn-custom btn-right" type="submit" tabindex="3">Login</button>
 				</form>
 			</div>
 		</div>
 	</div>
 </body>
-<script>
-	$('input').focus(function(){
-		$(this).parent().addClass('labelcolor');
-	})
-	$('input').on('focusout',function(){
-		$(this).parent().removeClass('labelcolor');
-	})	
-	
 
+<script src="management/src/js/stylefunc.js" type="text/javascript"></script>
 
-</script>
 
 </html>

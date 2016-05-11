@@ -1,10 +1,11 @@
 <?php
 
+
 require('config.php');
 
 
 session_start();
-
+unset($_GET);
 
 $loginObject = new Query();
 
@@ -12,8 +13,11 @@ $loginObject = new Query();
 
 $data = $loginObject->select("user",$_POST);
 
-if($data){
+if($data == true){
 	$_SESSION['user'] = $_POST['username'];
 	$_SESSION['loggedin'] = true;
 	header('Location:/backend/index.php');
+}elseif($data == false) {
+	header('Location:/index.php?loginfailed');
+
 }

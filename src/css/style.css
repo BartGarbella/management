@@ -45,7 +45,10 @@ tbody tr:hover {
 
 
 
+
+
 .navbar-inverse {
+  border-radius: 0px;
   background-color: #222;
   border-color: #080808;
 }
@@ -131,7 +134,7 @@ tbody tr:hover {
   color: #444;
 }
 
-.btn-custom:hover {
+.btn-custom:hover, .btn-custom:focus {
   box-shadow: 0px 0px 10px #73e600;
 	background-color: #73e600;
 	color: #444;
@@ -164,11 +167,22 @@ thead {
 
 
 
+.login-line {
+  border-color: #73e600;
+  transition: 1s;
+  width: 0%;
+}
+
+.login-line-extend {
+  transition: 1s;
+  width: 100%;
+}
+
 
 .form-group > input {
 
   border-color: transparent;
-  border-bottom-color: #ccc;
+  /*border-bottom-color: #ccc;*/
   background-color: transparent!important;
   color: #ccc;
   border-radius: 0px;
@@ -176,11 +190,27 @@ thead {
 
 .form-group > input:focus {
 	
-  border-bottom-color: #73e600;
-  transition: border-bottom-color 1s;
+  /*border-bottom-color: #73e600;
+  transition: border-bottom-color 1s;*/
 
 } 
 
+.loginfailed {
+  color: orange;
+}
+
+
+.nav-custom {
+  background-color: #777;
+  position: relative;
+  transition: left 1s;
+  left: -320px;
+}
+
+.nav-custom-fadein {
+  transition: left 1s;
+  left: 0px;
+}
 
 
 @media (max-width: 768px) {

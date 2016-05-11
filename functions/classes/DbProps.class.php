@@ -7,10 +7,10 @@ class DbProps
 {
 	
 	public static $_properties = array(
-			'hostname' => 'localhost',
+			'hostname' => 'numba8.myds.me',
 			'database' => 'management',
 			'charset'  => 'utf8',
-			'username' => 'root',
+			'username' => 'mgmt',
 			'password' => 'HellFire123'
 			);
 	
