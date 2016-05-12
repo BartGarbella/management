@@ -201,10 +201,11 @@ thead {
 
 
 .nav-custom {
+  width: 60%;
   background-color: #777;
   position: relative;
   transition: left 1s;
-  left: -320px;
+  left: -220px;
 }
 
 .nav-custom-fadein {
