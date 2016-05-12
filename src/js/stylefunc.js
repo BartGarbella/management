@@ -15,8 +15,18 @@
 		});
 	})
 
-	$('.nav-custom').hover(function(){
-		$(this).addClass('nav-custom-fadein');
+
+	$('.resource-item').hover(function(){
+		$(this).children('.nav-line').addClass('nav-line-extend');
 	},function(){
-		$(this).removeClass('nav-custom-fadein');
+		$(this).children('.nav-line').removeClass('nav-line-extend');
 	})
+
+	// $('.navbar-brand').click(function(){
+	// 	$('.nav-custom').addClass('nav-custom-fadein');
+	// })
+
+	if ($('#username').focus()) {
+		$(this).siblings('label').addClass('labelcolor');
+		$(this).siblings('hr').addClass('login-line-extend');
+	}

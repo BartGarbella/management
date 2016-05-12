@@ -45,6 +45,10 @@ if (isset($_GET['loginfailed'])) {
 	</div>
 </body>
 
+<script>
+
+</script>
+
 <script type="text/javascript" src="management/src/js/jquery-1.12.3.min.js"></script>
 <script type="text/javascript" src="management/src/js/bootstrap.js"></script>
 <script src="management/src/js/stylefunc.js" type="text/javascript"></script>
