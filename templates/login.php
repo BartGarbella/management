@@ -16,7 +16,9 @@ if (isset($_GET['loginfailed'])) {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Login</title>
 
-	
+
+	<link rel="stylesheet" href="management/src/css/bootstrap.css">
+	<link rel="stylesheet" href="management/src/css/style.css">
 </head>
 <body>
 	<div class="container container-login">
@@ -42,12 +44,9 @@ if (isset($_GET['loginfailed'])) {
 		</div>
 	</div>
 </body>
+
 <script type="text/javascript" src="management/src/js/jquery-1.12.3.min.js"></script>
-	<script type="text/javascript" src="management/src/js/bootstrap.js"></script>
-
-	<link rel="stylesheet" href="management/src/css/bootstrap.css">
-	<link rel="stylesheet" href="management/src/css/style.css">
-
+<script type="text/javascript" src="management/src/js/bootstrap.js"></script>
 <script src="management/src/js/stylefunc.js" type="text/javascript"></script>
 
 
