@@ -16,6 +16,11 @@ input {
   border-radius: 0px;
 }
 
+/*.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}*/
+
 
 
 
@@ -48,6 +53,18 @@ input {
 
 /* ######################################### Backend ######################################### */
 
+.nav-link {
+	cursor: pointer;
+	padding: 5px;
+}
+
+.nav-link:hover > p {
+	color: #73e600;
+ 	transition: 0.5s;
+}
+
+
+
 
 .nav-line {
   border: 1px solid #73e600;
@@ -77,15 +94,12 @@ input {
 
 .nav-custom {
   background-color: #777;
-  box-shadow: 10px 10px 20px #333;
-  /*height: 0px;
-  transition: height 1s;*/
+  box-shadow: 0px 15px 10px #333;
 
 }
 
 .nav-custom-fadein {
-  /*transition: height 1s;
-  height: 100%;*/
+
 }
 
 /* ######################################### Buttons ######################################### */
