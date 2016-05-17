@@ -30,3 +30,10 @@
 		$(this).siblings('label').addClass('labelcolor');
 		$(this).siblings('hr').addClass('login-line-extend');
 	}
+
+
+
+ $('#brand').click(function(){
+ 	$('#content').delay(100).toggleClass('col-md-10');
+
+ })
